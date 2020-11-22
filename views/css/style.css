@@ -2854,12 +2854,18 @@ body {
   font-size:150%;
   color:#EE827F;
   margin-top: 20px;
+  padding: 0px;
+  margin-bottom: -10px;
 }
 
 
 .live-lesson-info {
   font-weight:bold;
-  margin-top:10px;
+}
+
+.live-lesson-container {
+  display: block;
+  margin-bottom: -10px;
 }
 
 .zoom-style {
@@ -2924,6 +2930,16 @@ body {
 
 .footer-news {
   color:white;
+  font-weight: bold;
+}
+
+.var-style {
+  color: #333333;
+  font-weight: bold
+}
+
+.function-style {
+  color: #008800;
   font-weight: bold;
 }
 

@@ -3,17 +3,19 @@ const bodyParser = require("body-parser");
 const app = express();
 const httpApp = express();
 const path = require('path')
-const http = require("http");
+const http = require('http');
 const https = require('https');
 const session = require('express-session');
+var routes = require('./routes/index.js');
+var partials = require('express-partials');
 const port = 80;
 const fs = require("fs");
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const { check, validationResult } = require('express-validator');
-const options = {
-  key: fs.readFileSync('./key.pem'),
-  cert: fs.readFileSync('./cert.pem')
-};
+//const options = {
+  //key: fs.readFileSync('./key.pem'),
+  //cert: fs.readFileSync('./cert.pem')
+//};
 var LocalStrategy   = require('passport-local').Strategy;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,7 +27,12 @@ app.use(session({
 	saveUninitialized: true
 }));
 
-app.use(express.static("view", { extensions: ['html'] }));
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+routes(app);
+app.use(partials());
+
+app.use(express.static("views", { extensions: ['html'] }));
 
 pass2 = "2";
 function callback(responseText){
@@ -47,12 +54,12 @@ con.connect(function(err) {
   console.log("Connected!");
 });
 
-httpApp.get("*", function(req, res, next) {
-    res.redirect("https://defineinclude.com" + req.path);
-});
+//httpApp.get("*", function(req, res, next) {
+    //res.redirect("https://defineinclude.com" + req.path);
+//});
 
 
-http.createServer(httpApp).listen(80, function() {
+http.createServer(app).listen(8080, function() {
     console.log("Express TTP server listening on port 80");
 });
 
@@ -62,19 +69,19 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
 
-https
-  .createServer(
-    {
-      key: fs.readFileSync('key.pem'),
-      cert: fs.readFileSync('cert.pem'),
-      ca: fs.readFileSync('chain.pem')
-    },
-    app
-  )
-  .listen(443, () => {
-    console.log('Listening...')
-  })
-;
+//https
+  //.createServer(
+    //{
+    //  key: fs.readFileSync('key.pem'),
+    //  cert: fs.readFileSync('cert.pem'),
+    //  ca: fs.readFileSync('chain.pem')
+  //  },
+  //  app
+  //)
+//  .listen(443, () => {
+//    console.log('Listening...')
+//  })
+//;
 
 function userIsAllowed(callback, status) {
   // this function would contain your logic, presumably asynchronous,
