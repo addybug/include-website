@@ -12,10 +12,10 @@ const port = 80;
 const fs = require("fs");
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const { check, validationResult } = require('express-validator');
-//const options = {
-  //key: fs.readFileSync('./key.pem'),
-  //cert: fs.readFileSync('./cert.pem')
-//};
+const options = {
+  key: fs.readFileSync('./key.pem'),
+  cert: fs.readFileSync('./cert.pem')
+};
 var LocalStrategy   = require('passport-local').Strategy;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -54,12 +54,12 @@ con.connect(function(err) {
   console.log("Connected!");
 });
 
-//httpApp.get("*", function(req, res, next) {
-    //res.redirect("https://defineinclude.com" + req.path);
-//});
+httpApp.get("*", function(req, res, next) {
+    res.redirect("https://defineinclude.com" + req.path);
+});
 
 
-http.createServer(app).listen(8080, function() {
+http.createServer(httpApp).listen(8080, function() {
     console.log("Express TTP server listening on port 80");
 });
 
@@ -69,19 +69,19 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
 
-//https
-  //.createServer(
-    //{
-    //  key: fs.readFileSync('key.pem'),
-    //  cert: fs.readFileSync('cert.pem'),
-    //  ca: fs.readFileSync('chain.pem')
-  //  },
-  //  app
-  //)
-//  .listen(443, () => {
-//    console.log('Listening...')
-//  })
-//;
+https
+  .createServer(
+    {
+      key: fs.readFileSync('key.pem'),
+      cert: fs.readFileSync('cert.pem'),
+      ca: fs.readFileSync('chain.pem')
+    },
+    app
+  )
+  .listen(443, () => {
+    console.log('Listening...')
+  })
+;
 
 function userIsAllowed(callback, status) {
   // this function would contain your logic, presumably asynchronous,
