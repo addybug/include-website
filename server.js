@@ -59,7 +59,7 @@ httpApp.get("*", function(req, res, next) {
 });
 
 
-http.createServer(httpApp).listen(8080, function() {
+http.createServer(httpApp).listen(80, function() {
     console.log("Express TTP server listening on port 80");
 });
 
