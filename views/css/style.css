@@ -2863,7 +2863,7 @@ body {
   font-weight:bold;
 }
 
-.live-lesson-container {
+.live-lesson-container, .paragraph-container {
   display: block;
   margin-bottom: -10px;
 }
@@ -2871,6 +2871,10 @@ body {
 .zoom-style {
   text-decoration:none;
   color:#95bfb1;
+}
+
+.invisible-assignments {
+  display: none;
 }
 
 .topic-list {
@@ -2881,6 +2885,7 @@ body {
   font-size:150%;
   color:#EE827F;
   margin-top: 20px;
+  margin-bottom: -10px;
 }
 
 .navbar-margin {

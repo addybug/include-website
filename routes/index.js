@@ -18,9 +18,18 @@ module.exports = function(app) {
         time: "Time: 1pm-3pm CST",
         topics: "<li>Conditionals</li> <li>Loops</li> <li>Functions</li> <li>Lists</li>  <li>Dictionaries</li>",
         title: "Area Calculator",
-        description: "<p>Create a program that:</p>            <ul>              <li>Takes a float from user input</li>              <li>                Assigns that input to a variable (<span class='var-style'>radius</span>) </li> <li>Calculates the area of a circle using 3.14 as pi</li>              <li>Prints the area</li>            </ul>",
+        description: "<div class='paragraph-container'><p>Create a program that:</p>    </div>        <ul>              <li>Takes a float from user input</li>              <li>                Assigns that input to a variable (<span class='var-style'>radius</span>) </li> <li>Calculates the area of a circle using 3.14 as pi</li>              <li>Prints the area</li>            </ul>",
         slideShow: "https://docs.google.com/presentation/d/1tiejS-VzwIYJ9z0xqgue0z0_bTe87vqzufwjSwMtjQY/edit?usp=sharing",
         youtube: "https://youtu.be/kAuMwTu12uE"
+      },
+      june21: {
+        day: "Sunday June 21",
+        time: "Time: 2pm-3pm CST",
+        topics: "<li>Last live lesson</li>              <li>Guess word clouds</li>              <li>Ways to keep learning</li>              <li>Coding competitions</li>              <li>Parting words</li>",
+        title: "",
+        description: "",
+        slideShow: "https://docs.google.com/presentation/d/1A5agrdAqPzAKDBF0k-v3TjXMFKkOZ6-Y8O-Phqd3T7A/edit?usp=sharing",
+        youtube: "https://youtu.be/nHIj-zW-bI8"
       }
     }
       res.render('pages/live-lesson', {info: crashContent[req.params.day]});
