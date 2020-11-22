@@ -34,4 +34,16 @@ module.exports = function(app) {
     }
       res.render('pages/live-lesson', {info: crashContent[req.params.day]});
   });
+
+  app.get('/crash-course/:day', function(req, res) {
+    let crashContent = {
+      june15: {
+        day: "Monday June 15",
+        title: "Ice Breaker 2",
+        description: "<div class='paragraph-container'> <p> Take your code from ice Breaker I and format the print statements to create sentences. </p> </div> <ul> <li> For example, <span class='black-span' ><span class='color1-span'>print</span>(<span class='color2-span' >f"My name is {name} and I am {age} years old."</span ><span class='color3-span'>)</span></span > </li> </ul> <h2 class='res_eve_des project-header' > Email Converter </h2> <p>Create a program that:</p> <ul> <li>Takes a yahoo email address from user input</li> <li> Assigns that input to a variable (<span class='var-style' >email</span >) </li> <li> Takes the “@yahoo.com” part off of the address using string indexing and splicing </li> <ul> <li>Hint: Use the Strings Cheat Sheet</li> </ul> <li> Assigns the username of the email address to a variable (<span class='var-style' >username</span >) </li> <li> Assigns <span class='black-span' >username <span class='color3-span'>+</span> <span class='color2-span' >"@gmail.com"</span ></span > to a variable named <span class='var-style'>new_email</span> </li> <li> Prints <span class='var-style'>new_email</span> </li> </ul>"
+      },
+    }
+      res.render('pages/assignment', {info: crashContent[req.params.day]});
+  });
+
 };
