@@ -2922,6 +2922,11 @@ body {
   margin-top: 20px;
 }
 
+.attachment-links:hover {
+  font-style: none;
+  color: #95bfb1;
+}
+
 .footer-def {
   color:white;
   font-weight: bold;
