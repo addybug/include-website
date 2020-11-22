@@ -18,7 +18,7 @@ module.exports = function(app) {
         time: "Time: 1pm-3pm CST",
         topics: "<li>Conditionals</li> <li>Loops</li> <li>Functions</li> <li>Lists</li>  <li>Dictionaries</li>",
         title: "Area Calculator",
-        description: "<p>Create a program that:</p>            <ul>              <li>Takes a float from user input</li>              <li>                Assigns that input to a variable (<span                  class="var-style"                  >radius</span                >)              </li>              <li>Calculates the area of a circle using 3.14 as pi</li>              <li>Prints the area</li>            </ul>",
+        description: "<p>Create a program that:</p>            <ul>              <li>Takes a float from user input</li>              <li>                Assigns that input to a variable (<span class='var-style'>radius</span>) </li> <li>Calculates the area of a circle using 3.14 as pi</li>              <li>Prints the area</li>            </ul>",
         slideShow: "https://docs.google.com/presentation/d/1tiejS-VzwIYJ9z0xqgue0z0_bTe87vqzufwjSwMtjQY/edit?usp=sharing",
         youtube: "https://youtu.be/kAuMwTu12uE"
       }
