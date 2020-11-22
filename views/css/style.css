@@ -2888,6 +2888,8 @@ body {
   margin-bottom: -10px;
 }
 
+
+
 .navbar-margin {
   margin-top:50px;
 }
@@ -2951,6 +2953,22 @@ body {
 .function-style {
   color: #008800;
   font-weight: bold;
+}
+
+.black-span {
+  color: black;
+}
+
+.color1-span {
+  color: #008000;
+}
+
+.color2-span {
+  color: #BA2121;
+}
+
+.color3-span {
+  color: #666666
 }
 
 /*# sourceMappingURL=style.css.map */
