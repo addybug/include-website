@@ -3001,4 +3001,8 @@ body {
   display: none;
 }
 
+.shrink-margin {
+  margin-top: -10px;
+}
+
 /*# sourceMappingURL=style.css.map */
