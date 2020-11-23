@@ -2888,7 +2888,9 @@ body {
   margin-bottom: -10px;
 }
 
-
+.list-styling {
+  margin-bottom: 15px;
+}
 
 .navbar-margin {
   margin-top:50px;
@@ -2934,6 +2936,15 @@ body {
   color: #95bfb1;
 }
 
+.attachment-links2 {
+  color:#f6b66c;
+}
+
+.attachment-links2:hover {
+  font-style: none;
+  color: #95bfb1;
+}
+
 .footer-def {
   color:white;
   font-weight: bold;
@@ -2969,6 +2980,16 @@ body {
 
 .color3-span {
   color: #666666
+}
+
+.starter-code {
+  font-size:125%;
+  color:#f6b66c;
+  margin-top: 20px;
+}
+
+.unview {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
