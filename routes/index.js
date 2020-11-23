@@ -65,7 +65,7 @@ module.exports = function(app) {
       june18: {
         day: "Thursday June 18",
         title: "Ice Breaker III",
-        description: "<div class='paragraph-container'> <p> Using your Ice Breaker II Code, create a dictionary and store all of your variables as key-value pairs in that dictionary. Adjust your print statements so that they will print the key and value from the dictionary. </p></div>",
+        description: "<div class='paragraph-container'> <p> Using your Ice Breaker II Code, create a dictionary and store all of your variables as key-value pairs in that dictionary. Adjust your print statements so that they will print the key and value from the dictionary. <br> <br> <br> <br> <br></p></div>",
         viewAttachments:"unview",
         view2: "unview",
         starter1: "", starter2: ""
