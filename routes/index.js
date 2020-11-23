@@ -2,7 +2,7 @@
 
 module.exports = function(app) {
 
-  app.get('/(crash-course|advanced-concepts|machine-learning)/live-lesson/:day', function(req, res) {
+  app.get('/:course(crash-course|advanced-concepts|machine-learning)/live-lesson/:day', function(req, res) {
     let content = {
       june13: {
         day: "Saturday June 13",
@@ -35,7 +35,7 @@ module.exports = function(app) {
       res.render('pages/live-lesson', {info: content[req.params.day]});
   });
 
-  app.get('/(crash-course|advanced-concepts|machine-learning)/:day', function(req, res) {
+  app.get('/:course(crash-course|advanced-concepts|machine-learning)/:day', function(req, res) {
     let content = {
       june15: {
         day: "Monday June 15",
