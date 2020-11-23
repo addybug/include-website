@@ -28,10 +28,18 @@ module.exports = function(app) {
         day: "Sunday June 21",
         time: "Time: 2pm-3pm CST",
         topics: "<li>Last live lesson</li> <li>Guess word clouds</li> <li>Ways to keep learning</li> <li>Coding competitions</li> <li>Parting words</li>",
-        title: "",
-        description: "",
+        title: "", description: "",
         slideShow: "https://docs.google.com/presentation/d/1A5agrdAqPzAKDBF0k-v3TjXMFKkOZ6-Y8O-Phqd3T7A/edit?usp=sharing",
         youtube: "https://youtu.be/nHIj-zW-bI8",
+        starter: "", view: "unview"
+      },
+      june27: {
+        day: "Saturday June 27",
+        time: "Time: 10am-12pm CST",
+        topics: "<li>Github</li> <li>Atom</li> <li>Classes</li> <li>Built-in Modules</li> <li>os</li> <li>shutil</li>",
+        title: "", description: "",
+        slideShow: "https://docs.google.com/presentation/d/1O3AtENpbqFarXDrRoUsnwE2Y-Dx-eYTOZcHjtXN_g2Y/edit?usp=sharing",
+        youtube: "https://youtu.be/2w0uxwfmLn4",
         starter: "", view: "unview"
       },
       july1: {
@@ -64,6 +72,15 @@ module.exports = function(app) {
         youtube: "https://youtu.be/WTPcvrGJJmk",
         starter: "https://drive.google.com/file/d/1_nPRP-xWMCLWWZdQEqe_m3Az-CPaYnu4/view?usp=sharing",
         view: ""
+      },
+      july12: {
+        day: "Sunday July 12",
+        time: "Time: 2pm-3pm CST",
+        topics: "<li>How to continue learning</li>",
+        title: "Image Sort",
+        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> </p>",
+        slideShow: "https://docs.google.com/presentation/d/1HSXckmvk9lEewN5EOuo12bzJi8zFtSZzcTZsMAHJGc0/edit?usp=sharing",
+        youtube: "", starter: "", view: "unview"
       }
     }
       res.render('pages/live-lesson', {info: content[req.params.day]});
@@ -169,6 +186,23 @@ module.exports = function(app) {
         viewAttachments: "unview",
         view2: "unview",
         starter1: "", starter2: ""
+      },
+      july10: {
+        day: "Friday July 10",
+        title: "Pokemon Requests",
+        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> </p>",
+        viewAttachments: "unview",
+        view2: "unview",
+        starter1: "", starter2: ""
+      },
+      july11: {
+        day: "Saturday July 11",
+        title: "Image Sort",
+        description: "<p> For your final project, you will use <a href='https://www.clarifai.com/' class='paragraph-links' > Clarifai API </a> to sort the images in the starter code. You will sort the images based on which image tag matches the four directories in the starter code into directories similar to those you created in File Organizer. Refer to Live Lesson 5 for an example of requesting image tags from Clarifai. </p>",
+        viewAttachments: "",
+        view2: "unview",
+        starter1: "https://drive.google.com/file/d/1aulrlgitKveADLB2uVb-5M3fXD4BirKf/view?usp=sharing",
+        starter2: ""
       }
     }
       res.render('pages/assignment', {info: content[req.params.day]});
