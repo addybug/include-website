@@ -78,6 +78,14 @@ module.exports = function(app) {
         view2: "unview",
         starter1: "https://drive.google.com/file/d/1XaUYC8i6Nz6cWpHCQImmSOQW2OiqImnF/view?usp=sharing",
         starter2: ""
+      },
+      june20: {
+        day: "Saturday June 20",
+        title: "Word Cloud",
+        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> <br> <br> </p>",
+        viewAttachments: "unview",
+        view2: "unview",
+        starter1: "", starter2: ""
       }
     }
       res.render('pages/assignment', {info: crashContent[req.params.day]});
