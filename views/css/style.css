@@ -3027,4 +3027,26 @@ body {
   margin-top: 15px;
 }
 
+.welcome-message {
+  font-size:200%;
+  color:#95bfb1;
+}
+
+.grey-date {
+  color:#777777;
+}
+
+.no-text-deco, .no-text-deco:hover {
+  text-decoraation: none;
+}
+
+.classroom-description-container {
+  margin-bottom:20px;
+  margin-top:20px;
+}
+
+.date-style {
+  margin-top: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
