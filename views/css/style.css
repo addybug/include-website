@@ -3001,8 +3001,12 @@ body {
   display: none;
 }
 
-.shrink-margin {
+.small-margin {
   margin-top: 0px;
+}
+
+.smaller-margin {
+  margin-top: -10px;
 }
 
 /*# sourceMappingURL=style.css.map */
