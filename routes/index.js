@@ -25,7 +25,7 @@ module.exports = function(app) {
       june21: {
         day: "Sunday June 21",
         time: "Time: 2pm-3pm CST",
-        topics: "<li>Last live lesson</li>              <li>Guess word clouds</li>              <li>Ways to keep learning</li>              <li>Coding competitions</li>              <li>Parting words</li>",
+        topics: "<li>Last live lesson</li> <li>Guess word clouds</li> <li>Ways to keep learning</li> <li>Coding competitions</li> <li>Parting words</li>",
         title: "",
         description: "",
         slideShow: "https://docs.google.com/presentation/d/1A5agrdAqPzAKDBF0k-v3TjXMFKkOZ6-Y8O-Phqd3T7A/edit?usp=sharing",
@@ -43,8 +43,7 @@ module.exports = function(app) {
         description: "<div class='paragraph-container'> <p> Take your code from ice Breaker I and format the print statements to create sentences. </p> </div> <ul> <li> For example, <span class='black-span' ><span class='color1-span'>print</span>(<span class='color2-span' >f'My name is {name} and I am {age} years old.'</span ><span class='color3-span'>)</span></span > </li> </ul> <h2 class='res_eve_des project-header' > Email Converter </h2> <p>Create a program that:</p> <ul> <li>Takes a yahoo email address from user input</li> <li> Assigns that input to a variable (<span class='var-style' >email</span >) </li> <li> Takes the “@yahoo.com” part off of the address using string indexing and splicing </li> <div class='small-margin'> <ul> <li>Hint: Use the Strings Cheat Sheet</li> </ul> </div> <li> Assigns the username of the email address to a variable (<span class='var-style' >username</span >) </li> <li> Assigns <span class='black-span' >username <span class='color3-span'>+</span> <span class='color2-span' >''@gmail.com'</span ></span > to a variable named <span class='var-style'>new_email</span> </li> <li> Prints <span class='var-style'>new_email</span> </li> </ul>",
         viewAttachments: "unview",
         view2: "unview",
-        starter1: "",
-        starter2: ""
+        starter1: "", starter2: ""
       },
       june16: {
         day: "Tuesday June 16",
@@ -52,8 +51,7 @@ module.exports = function(app) {
         description: "<div class='paragraph-container'> <p>Create a program that:</p> </div> <ul> <li>Takes a string as an input</li> <li> If the length of the string is divisible by 2, print the middle 2 characters </li> <div class='small-margin'> <ul> <li> Hint: Use this <a href='https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/#:~:text=The%20%25%20symbol%20in%20Python%20is,basic%20syntax%20is%3A%20a%20%25%20b' class='attachment-links2' > this </a> article. </li> </ul> </div> <li>Else, print the middle character</li> </ul> <h2 class='res_eve_des project-header' > Choose Your Own Adventure </h2> <p> Have you ever played a Choose Your Own Adventure game on your phone or read the Choose Your Own Adventure series? If not, take a minute to look it up and get familiar with the concept because today you will be writing your own! </p> <ul> <li> Print out the beginning of a story. Be as creative as you want! </li> <li>Give the user at least 3 options</li> <li> Print out different results depending on the user’s choice </li> </ul> <div class='smaller-margin'> <p> For this project, write at least 5 different sets of choices for the user. Share your programs in Slack so other students can play! </p> </div>",
         viewAttachments: "unview",
         view2: "unview",
-        starter1: "",
-        starter2: ""
+        starter1: "", starter2: ""
       },
       june17: {
         day: "Wednesday June 17",
@@ -63,6 +61,14 @@ module.exports = function(app) {
         view2: "",
         starter1: "https://drive.google.com/file/d/1h6mbaWsClrFUHo6vtao13I8VHItHwhb1/view?usp=sharing",
         starter2: "https://drive.google.com/file/d/1SpEE_7HxzfL0mNzsgkj5VNt7fahCurRu/view?usp=sharing"
+      },
+      june18: {
+        day: "Thursday June 18",
+        title: "Ice Breaker III",
+        description: "<div class='paragraph-container'> <p> Using your Ice Breaker II Code, create a dictionary and store all of your variables as key-value pairs in that dictionary. Adjust your print statements so that they will print the key and value from the dictionary. </p></div>",
+        viewAttachments:"unview",
+        view2: "unview",
+        starter1: "", starter2: ""
       }
     }
       res.render('pages/assignment', {info: crashContent[req.params.day]});
