@@ -2983,9 +2983,12 @@ body {
 }
 
 .starter-code {
+  margin-top: 20px;
+}
+
+.starter-color {
   font-size:125%;
   color:#f6b66c;
-  margin-top: 20px;
 }
 
 .unview {
