@@ -53,6 +53,17 @@ module.exports = function(app) {
         slideShow: "https://docs.google.com/presentation/d/1p9wYGWRfVlMOcBk7LxMHf2JEXNdHwy0FO6DAX5CV33U/edit?usp=sharing",
         youtube: "https://youtu.be/E1JjguUK_Wk",
         starter: "", view: "unview"
+      },
+      july9: {
+        day: "Thursday July 9",
+        time: "Time: 2pm-3pm CST",
+        topics: "<li>APIs</li> <li>Requests</li> <li>Json</li>",
+        title: "Pokemon Requests",
+        description: "<p> Your project today is to use <a href='https://pokeapi.co/' class='paragraph-links' >PokeAPI</a > to access Pokemon data. The goal is to get the names of the first 151 Pokemon and their abilities. Use the instructions in the starter code attached to complete the assignment. </p>",
+        slideShow: "https://docs.google.com/presentation/d/1xES65suPC5XPdyvuzplwt3b6KqGiCx91hvgrxC-YyLE/edit?usp=sharing",
+        youtube: "https://youtu.be/WTPcvrGJJmk",
+        starter: "https://drive.google.com/file/d/1_nPRP-xWMCLWWZdQEqe_m3Az-CPaYnu4/view?usp=sharing",
+        view: ""
       }
     }
       res.render('pages/live-lesson', {info: content[req.params.day]});
@@ -135,6 +146,30 @@ module.exports = function(app) {
         view2: "unview",
         starter1: "", starter2: ""
       },
+      july6: {
+        day: "Monday July 6",
+        title: "Beautiful IMDB Scrape",
+        description: "<p> For this lab, you will be scraping the top 50 TV shows on IMDB of your favorite genre using requests and BeautifulSoup. Go to <a href='https://www.imdb.com/chart/toptv/?ref_=nv_tvv_250' class='paragrah-links' >this</a > link and pick your favorite genre. Use that link in your script. Create a CSV file with the rank, name, length, genre(s), and rating. </p>",
+        viewAttachments: "unview",
+        view2: "unview",
+        starter1: "", starter2: ""
+      },
+      july7: {
+        day: "Tuesday July 7",
+        title: "Sandbox Scraping",
+        description: "<p> Today, you will practice web scraping using Selenium. Go to <a href='http://toscrape.com/' class='paragraph-links' >this</a > website to find safe websites to scape. You will be doing both of the websites, but start with Books since it is easier. The goal is to parse the data from the websites into a CSV file. Your code may take some time to run. </p> <h3 class='second-assignment-color'>Books</h3> <div class='small-margin'> <p> Loop through each page and store the name of the book and the price in a CSV file. </p> </div> <ul> <li> Hint: Hint: Each page has 20 items and there are 50 pages. </li> </ul> <h3 class='second-assignment-color'>Quotes</h3> <div class='small-margin'> <p> Loop through each quote and store the author of the quote and the quote in a CSV file. If you want an extra challenge, click “Login” and write a script that logs into the website. (Any username and password combination works.) </p>",
+        viewAttachments: "unview",
+        view2: "unview",
+        starter1: "", starter2: ""
+      },
+      july8: {
+        day: "Wednesday July 8",
+        title: "Sandbox Scraping",
+        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> </p>",
+        viewAttachments: "unview",
+        view2: "unview",
+        starter1: "", starter2: ""
+      }
     }
       res.render('pages/assignment', {info: content[req.params.day]});
   });
