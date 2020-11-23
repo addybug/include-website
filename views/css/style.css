@@ -2984,11 +2984,18 @@ body {
 
 .starter-code {
   margin-top: 20px;
+  display: block;
+  width: 100%;
 }
 
 .starter-color {
   font-size:125%;
   color:#f6b66c;
+}
+
+.starter-color:hover {
+  color:#f6b66c;
+  font-style: none;
 }
 
 .unview {
