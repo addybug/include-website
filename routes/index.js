@@ -42,6 +42,15 @@ module.exports = function(app) {
         youtube: "https://youtu.be/2w0uxwfmLn4",
         starter: "", view: "unview"
       },
+      june28: {
+        day: "Sunday June 28",
+        time: "Time: 1pm-3pm CST",
+        topics: "<li>GUIs</li><li>tkinter</li>",
+        title: "", description: "",
+        slideShow: "https://docs.google.com/presentation/d/1QeJuYuaaq_voAfd3JusCCPHdwx_RK771o2EGKQHmBBk/edit?usp=sharing",
+        youtube: "https://youtu.be/PwNQfVtboVg",
+        starter: "", view: "unview"
+      },
       july1: {
         day: "Wednesday July 1",
         time: "Time: 12pm-2pm CST",
@@ -137,6 +146,24 @@ module.exports = function(app) {
         viewAttachments: "unview",
         view2: "unview",
         starter1: "", starter2: ""
+      },
+      june29: {
+        day: "Monday June 29",
+        title: "File Organizer",
+        description: "<p> Today, you will be creating a utility script to organize the files on your computer. The goal is to create a Python program that sorts files by type such as photos, documents, and audio. Download the starter code and follow the commented instructions. In the starter code zip file is a folder to test your script on. Create a repository to put your code into and paste the URL in the Submission Form once you’ve completed the project. </p> <div class='paragraph-container'> <p> For this project, you’ll be using two built-in modules: os and shutil. Below, you will find links to the documentation for these modules. Use them if you run into problems working on the project. </p> </div> <div class='smaller-margin-bottom'> <ul <li> <a href='https://docs.python.org/3/library/os.html' class='paragraph-links' >os</a > </li> <li> <a href='https://docs.python.org/3/library/shutil.html' class='paragraph-links' >shutil</a > </li> </ul> </div>",
+        viewAttachments: "",
+        view2: "unview",
+        starter1: "https://drive.google.com/file/d/1orDVh-c52Jq2DNGwCMeIP48S0ELCy7E0/view?usp=sharing",
+        starter2: ""
+      },
+      june30: {
+        day: "Tuesday June 30",
+        title: "Rock Paper Scissors",
+        description: "<p> The goal of this project is to create a rock paper scissors game using tkinter. Using the starter code below, you will create a basic rock paper scissors game by following the instructions in the commented code. If you have any extra time, consider adding images, animations, or additional information to the display. Get as fancy with this project as you want! </p> <div class='paragraph-container'> <p > For this project, you’ll be using a built-in package and a built-in module: tkinter and random. Below, you will find links to the documentation for these modules. Use them if you run into problems working on the project. </p> </div> <div class='smaller-margin-bottom'> <ul> <li> <a href='https://docs.python.org/3/library/tkinter.html' class='paragraph-links' >tkinter</a > </li> <li> <a href='https://docs.python.org/3/library/random.html' class='paragraph-links' >random</a > </li> </ul> </div>",
+        viewAttachments: "",
+        view2: "unview",
+        starter1: "https://drive.google.com/file/d/1KwcGgYnAEmc5k1DBDjp26OPAu6fQvix3/view?usp=sharing",
+        starter2: ""
       },
       july2: {
         day: "Thursday June 2",
