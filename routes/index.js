@@ -44,6 +44,15 @@ module.exports = function(app) {
         youtube: "https://youtu.be/d0_170HfjAQ",
         starter: "https://drive.google.com/file/d/163g3GdJFRymIiuuavO2vgvHVQpuX3D1c/view?usp=sharing",
         view: "",
+      },
+      july5: {
+        day: "Sunday July 5",
+        time: "Time: 1pm-2:30pm CST",
+        topics: "<li>CSV</li> <li>Web Scraping</li> <li>Beautiful Soup</li> <li>Requests</li> <li>Selenium</li>",
+        title: "", description: "",
+        slideShow: "https://docs.google.com/presentation/d/1p9wYGWRfVlMOcBk7LxMHf2JEXNdHwy0FO6DAX5CV33U/edit?usp=sharing",
+        youtube: "https://youtu.be/E1JjguUK_Wk",
+        starter: "", view: "unview"
       }
     }
       res.render('pages/live-lesson', {info: content[req.params.day]});
@@ -100,7 +109,32 @@ module.exports = function(app) {
         viewAttachments: "unview",
         view2: "unview",
         starter1: "", starter2: ""
-      }
+      },
+      july2: {
+        day: "Thursday June 2",
+        title: "Snake Game",
+        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> </p>",
+        viewAttachments: "unview",
+        view2: "unview",
+        starter1: "", starter2: ""
+      },
+      july3: {
+        day: "Friday July 3",
+        title: "MP3 Player",
+        description: "<p> Your final project for the week will be an MP3 player using tkinter and pygame. You will create a GUI for an MP3 player that can play, pause, and stop MP3 files from a directory on your computer. In the starter code zip file, there is a folder of free MP3 music that you can use to practice on or you can download your own. </p>",
+        viewAttachments: "",
+        view2: "unview",
+        starter1: "https://drive.google.com/file/d/11O1kY13_01OwAPk4eZXSdB9Zm_QIF8tf/view?usp=sharing",
+        starter2: ""
+      },
+      july4: {
+        day: "Saturday July 4",
+        title: "MP3 Player",
+        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> </p>",
+        viewAttachments: "unview",
+        view2: "unview",
+        starter1: "", starter2: ""
+      },
     }
       res.render('pages/assignment', {info: content[req.params.day]});
   });
