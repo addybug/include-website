@@ -78,7 +78,7 @@ module.exports = function(app) {
         time: "Time: 2pm-3pm CST",
         topics: "<li>How to continue learning</li>",
         title: "Image Sort",
-        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> </p>",
+        description: "<p>Keep working. You got this! </p>",
         slideShow: "https://docs.google.com/presentation/d/1HSXckmvk9lEewN5EOuo12bzJi8zFtSZzcTZsMAHJGc0/edit?usp=sharing",
         youtube: "", starter: "", view: "unview"
       }
