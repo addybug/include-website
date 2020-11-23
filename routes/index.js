@@ -2,8 +2,8 @@
 
 module.exports = function(app) {
 
-  app.get('/crash-course/live-lesson/:day', function(req, res) {
-    let crashContent = {
+  app.get('/:course/live-lesson/:day', function(req, res) {
+    let content = {
       june13: {
         day: "Saturday June 13",
         time: "Time: 10am-12pm CST",
@@ -35,8 +35,8 @@ module.exports = function(app) {
       res.render('pages/live-lesson', {info: crashContent[req.params.day]});
   });
 
-  app.get('/crash-course/:day', function(req, res) {
-    let crashContent = {
+  app.get('/:course/:day', function(req, res) {
+    let content = {
       june15: {
         day: "Monday June 15",
         title: "Ice Breaker 2",
