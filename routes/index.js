@@ -82,7 +82,7 @@ module.exports = function(app) {
       june20: {
         day: "Saturday June 20",
         title: "Word Cloud",
-        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> <br> <br> </p>",
+        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> </p>",
         viewAttachments: "unview",
         view2: "unview",
         starter1: "", starter2: ""
