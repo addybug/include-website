@@ -8,7 +8,6 @@ const https = require('https');
 const session = require('express-session');
 var routes = require('./routes/index.js');
 var partials = require('express-partials');
-const port = 80;
 const fs = require("fs");
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const { check, validationResult } = require('express-validator');
@@ -58,11 +57,9 @@ httpApp.get("*", function(req, res, next) {
     res.redirect("https://defineinclude.com" + req.path);
 });
 
-
 http.createServer(httpApp).listen(80, function() {
     console.log("Express TTP server listening on port 80");
 });
-
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
