@@ -11,7 +11,8 @@ module.exports = function(app) {
         title: "Song Lyrics",
         description: "<p> Find your favorite song on Genius and print the chorus line by line in Python. </p> <ul> <li> Hint: use <span class='function-style'>print</span>() and <span class='var-style'>/n</span> </li> </ul> <h2 class='res_eve_des project-header' > Ice Breaker 1 </h2> <p> Create variables (e.g. “<span style='color: #333333; font-weight: bold' >name</span>”, “<span class='var-style'>age</span>”) and set their values to the corresponding fact about yourself. Then, print the variable. Create at least 10 variables and use proper Python naming conventions. </p>",
         slideShow: "https://docs.google.com/presentation/d/1g6oshn4ALGeCruvrAJfxwfFVMzuUI9PwasGhNUmhOJM/edit?usp=sharing",
-        youtube: "https://youtu.be/a8IVRrz1DOc"
+        youtube: "https://youtu.be/a8IVRrz1DOc",
+        starter: "", view: "unview"
       },
       june14: {
         day: "Sunday June 14",
@@ -20,7 +21,8 @@ module.exports = function(app) {
         title: "Area Calculator",
         description: "<p>Create a program that:</p> <ul> <li>Takes a float from user input</li> <li> Assigns that input to a variable (<span class='var-style'>radius</span>) </li> <li>Calculates the area of a circle using 3.14 as pi</li> <li>Prints the area</li> </ul>",
         slideShow: "https://docs.google.com/presentation/d/1tiejS-VzwIYJ9z0xqgue0z0_bTe87vqzufwjSwMtjQY/edit?usp=sharing",
-        youtube: "https://youtu.be/kAuMwTu12uE"
+        youtube: "https://youtu.be/kAuMwTu12uE",
+        starter: "", view: "unview"
       },
       june21: {
         day: "Sunday June 21",
@@ -29,7 +31,19 @@ module.exports = function(app) {
         title: "",
         description: "",
         slideShow: "https://docs.google.com/presentation/d/1A5agrdAqPzAKDBF0k-v3TjXMFKkOZ6-Y8O-Phqd3T7A/edit?usp=sharing",
-        youtube: "https://youtu.be/nHIj-zW-bI8"
+        youtube: "https://youtu.be/nHIj-zW-bI8",
+        starter: "", view: "unview"
+      },
+      july1: {
+        day: "Wednesday July 1",
+        time: "Time: 12pm-2pm CST",
+        topics: "<li>pygame</li>",
+        title: "Snake Game",
+        description: "<p> For this lab, you will be exploring pygame by creating a snake game. If you missed Live Lesson 3, you will need to go look at the slides or watch the presentation because it contains information that is vital to this project. For those of you who have never played a snake game, here is a <a href='https://www.google.com/search?q=snake+game&rlz=1C1CHBF_enUS858US858&oq=snake+game&aqs=chrome..69i57j69i59j35i39j0j69i60j69i65j69i61j69i60.2366j0j7&sourceid=chrome&ie=UTF-8' class='paragraph-links' >link</a > to the description of the game. Download the starter code and follow the commented instructions to complete the assignment. Then, play the game and share your high score with the Slack group! </p> <p class='small-margin'> For this project, you’ll be using pygame. Below, you will find links to the documentation for this package. Use it if you run into problems working on the project. </p> <ul class='smaller-margin-bottom'> <li> <a href='https://www.pygame.org/docs/' class='paragraph-links' >pygame</a > </li> </ul>",
+        slideShow: "https://docs.google.com/presentation/d/1a1GpLv7cBik_ZP3zU8qRIZyDyRTwlj_EFo-noP-eat4/edit?usp=sharing",
+        youtube: "https://youtu.be/d0_170HfjAQ",
+        starter: "https://drive.google.com/file/d/163g3GdJFRymIiuuavO2vgvHVQpuX3D1c/view?usp=sharing",
+        view: "",
       }
     }
       res.render('pages/live-lesson', {info: content[req.params.day]});
