@@ -149,7 +149,7 @@ module.exports = function(app) {
       july6: {
         day: "Monday July 6",
         title: "Beautiful IMDB Scrape",
-        description: "<p> For this lab, you will be scraping the top 50 TV shows on IMDB of your favorite genre using requests and BeautifulSoup. Go to <a href='https://www.imdb.com/chart/toptv/?ref_=nv_tvv_250' class='paragrah-links' >this</a > link and pick your favorite genre. Use that link in your script. Create a CSV file with the rank, name, length, genre(s), and rating. </p>",
+        description: "<p> For this lab, you will be scraping the top 50 TV shows on IMDB of your favorite genre using requests and BeautifulSoup. Go to <a href='https://www.imdb.com/chart/toptv/?ref_=nv_tvv_250' class='paragraph-links' >this</a > link and pick your favorite genre. Use that link in your script. Create a CSV file with the rank, name, length, genre(s), and rating. <br> <br> <br> <br> </p>",
         viewAttachments: "unview",
         view2: "unview",
         starter1: "", starter2: ""
