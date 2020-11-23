@@ -3019,6 +3019,10 @@ body {
   margin-bottom: 0px;
 }
 
+.smaller-margin-bottom {
+  margin-bottom: -10px;
+}
+
 .smaller-margin {
   margin-top: -10px;
 }
