@@ -32,7 +32,7 @@ module.exports = function(app) {
         youtube: "https://youtu.be/nHIj-zW-bI8"
       }
     }
-      res.render('pages/live-lesson', {info: crashContent[req.params.day]});
+      res.render('pages/live-lesson', {info: content[req.params.day]});
   });
 
   app.get('/:course/:day', function(req, res) {
@@ -88,7 +88,7 @@ module.exports = function(app) {
         starter1: "", starter2: ""
       }
     }
-      res.render('pages/assignment', {info: crashContent[req.params.day]});
+      res.render('pages/assignment', {info: content[req.params.day]});
   });
 
 };
