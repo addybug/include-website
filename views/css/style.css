@@ -3005,6 +3005,10 @@ body {
   margin-top: 0px;
 }
 
+.small-margin-bottom {
+  margin-bottom: 0px;
+}
+
 .smaller-margin {
   margin-top: -10px;
 }
