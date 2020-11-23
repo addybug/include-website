@@ -2938,7 +2938,7 @@ body {
 }
 
 .paragraph-links:hover {
-  color:#f6b66c; 
+  color:#f6b66c;
 }
 
 .attachment-links:hover {
@@ -3021,6 +3021,10 @@ body {
 
 .smaller-margin {
   margin-top: -10px;
+}
+
+.large-margin {
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
