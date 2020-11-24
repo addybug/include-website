@@ -3090,6 +3090,10 @@ body {
   color:#95BFB1;
 }
 
+.event-info-margin {
+  margin-bottom: -30px;
+}
+
 .contact-image {
   max-width:90%;
   max-height:90%;
