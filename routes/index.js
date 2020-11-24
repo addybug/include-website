@@ -338,7 +338,7 @@ module.exports = function(app) {
       july31: {
         day: "Friday July 31",
         title: "K-Nearest Neighbors Practice",
-        description: "<p>Keep working. You got this!</p> <h2 class='res_eve_des assignment-header' > Decision Tree Practice </h2> <div class='paragraph-container'> <p>Keep working. You got this!</p> </div>",
+        description: "<p>Keep working. You got this!</p> <h2 class='res_eve_des project-header' > Decision Tree Practice </h2> <div class='paragraph-container'> <p>Keep working. You got this!</p> </div>",
         viewAttachments: "", view2: "",
         starter1: "https://drive.google.com/file/d/1MBEJkDmJ6a1QTIC_oJw8Krd0XpWQemTK/view?usp=sharing",
         starter2: "https://drive.google.com/file/d/1InGXPs7GmzMfv3sJSeJQnEiAVkDR8yM5/view?usp=sharing"
