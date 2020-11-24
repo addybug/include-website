@@ -196,10 +196,6 @@ button:focus {
   transition: all 0.3s linear;
 }
 
-.event_title:hover {
-  color: #f6b66c;
-}
-
 .btn_hover:hover {
   background: #f6b66c;
   color: #fff;
