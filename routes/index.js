@@ -92,7 +92,13 @@ module.exports = function(app) {
         youtube: "", starter: "", view: "unview"
       }
     }
+    if(req.params.day in content){
       res.render('pages/live-lesson', {info: content[req.params.day]});
+    }
+    else {
+      res.send("404: Page Not Found", 400);
+    }
+
   });
 
   app.get('/:course(crash-course|advanced-concepts|machine-learning)/:day', function(req, res) {
