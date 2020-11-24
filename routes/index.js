@@ -2,6 +2,10 @@
 
 module.exports = function(app) {
 
+  app.get('/about', function(req, res) {
+      res.render('pages/about-us');
+  });
+
   //Crash Course in Python
   app.get('/crash-course/live-lesson/:day', function(req, res) {
     let content = {
