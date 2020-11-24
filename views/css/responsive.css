@@ -102,6 +102,7 @@
     }
     .event_title {
         font-size: 20px;
+        margin-bottom: 0px;
     }
     .single-footer-widget{
         margin-top: 20px;
