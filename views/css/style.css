@@ -3075,4 +3075,15 @@ body {
   font-weight: bold;
 }
 
+h6 {
+  font-family: 'Quicksand', sans-serif;
+  color: #777777;
+}
+
+.contact-image {
+  max-width:90%;
+  max-height:90%;
+  margin-left:80;
+}
+
 /*# sourceMappingURL=style.css.map */
