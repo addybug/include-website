@@ -3075,9 +3075,10 @@ body {
   font-weight: bold;
 }
 
-h6 {
+.email-style {
   font-family: 'Quicksand', sans-serif;
   color: #777777;
+  font-size: 18px;
 }
 
 .contact-image {
