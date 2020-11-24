@@ -3034,6 +3034,9 @@ body {
 .large-margin {
   margin-top: 15px;
 }
+.large-margin-bottom {
+  margin-bottom: 15px;
+}
 
 .welcome-message {
   font-size:200%;
