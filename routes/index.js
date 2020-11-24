@@ -298,6 +298,42 @@ module.exports = function(app) {
         slideShow: "https://docs.google.com/presentation/d/1984jDJ41fQYebI7NWAHA6N7a1Elu04irl5MlhlcvGsk/edit?usp=sharing",
         youtube: "https://youtu.be/mu8iWHfIfic",
         starter: "", view: "unview"
+      },
+      august1: {
+        day: "Saturday August 1",
+        time: "Time: 1pm-2pm CST",
+        topics: "<li>Clustering</li> <li>k-Means Clustering</li>",
+        title: "", description: "",
+        slideShow: "https://docs.google.com/presentation/d/1XIy9l7xwTCznzZGRD35YNRRE5HHc2--FwpNBjjHt58A/edit?usp=sharing",
+        youtube: "https://youtu.be/0igYcF_W9iM",
+        starter: "", view: "unview"
+      },
+      august3: {
+        day: "Monday August 3",
+        time: "Time: 2pm-3:30pm CST",
+        topics: "<li>Hierarchical Clustering</li> <li>Desnity-based Clustering</li>",
+        title: "", description: "",
+        slideShow: "https://docs.google.com/presentation/d/1MMp86ioKuAXBB8SYYC6uXouFk4DicOp2gltZ3SgfhIQ/edit?usp=sharing",
+        youtube: "https://youtu.be/J5mt2jkRXd8",
+        starter: "", view: "unview"
+      },
+      august6: {
+        day: "Thursday August 6",
+        time: "Time: 10:30am-11:30am CST",
+        topics: "<li>Recommender Systems</li>",
+        title: "", description: "",
+        slideShow: "https://docs.google.com/presentation/d/1tF-_BM2hpAJn7re3PmB1zoMOa4P1sLGlNl-0srLnLus/edit?usp=sharing",
+        youtube: "https://youtu.be/VuINSKk-jWA",
+        starter: "", view: "unview"
+      },
+      august9: {
+        day: "Sunday August 9",
+        time: "Time: 11:00am-1:00pm CST",
+        topics: "<li>Bias in Machine Learning</li>",
+        title: "", description: "",
+        slideShow: "https://docs.google.com/presentation/d/1gXszG4bvQJSox5MZGl-8FRKtUI97etALh83Q5E_aPsY/edit?usp=sharing",
+        youtube: "",
+        starter: "", view: "unview"
       }
     };
     if(req.params.day in content){
@@ -342,6 +378,45 @@ module.exports = function(app) {
         viewAttachments: "", view2: "",
         starter1: "https://drive.google.com/file/d/1MBEJkDmJ6a1QTIC_oJw8Krd0XpWQemTK/view?usp=sharing",
         starter2: "https://drive.google.com/file/d/1InGXPs7GmzMfv3sJSeJQnEiAVkDR8yM5/view?usp=sharing"
+      },
+      august2: {
+        day: "Sunday August 2",
+        title: "k-Means Clustering Practice",
+        description: "<p>Use the starter code below to practice!</p> <h2 class='res_eve_des project-header' > Decision Tree Practice </h2> <div class='paragraph-container'> <p>Use the starter code below to practice!</p> </div>",
+        viewAttachments: "",
+        view2: "unview",
+        starter1: "https://drive.google.com/file/d/13TCVYlDKltQmBzT-l4MwyzKfWvUckFVS/view?usp=sharing",
+        starter2: ""
+      },
+      august4: {
+        day: "Tueday August 4",
+        title: "Hierarchical Clustering Practice",
+        description: "<p>Use the starter code below to practice!</p> <h2 class='res_eve_des project-header' > DBSCAN Clustering Practice </h2> <div class='paragraph-container'> <p>Use the starter code below to practice!</p> </div>",
+        viewAttachments: "", view2: "",
+        starter1: "https://drive.google.com/file/d/1KFyA9a47jd9Ets6kPAPIaz1lRlV6Gxcw/view?usp=sharing",
+        starter2: "https://drive.google.com/file/d/1SGRUqL7LwDZHJPAeof6hHh7usXA7watT/view?usp=sharing"
+      },
+      august5: {
+        day: "Wednesday August 5",
+        title: "Hierarchical Clustering Practice",
+        description: "<p>Keep working. You got this!</p> <h2 class='res_eve_des project-header'> DBSCAN Clustering Practice </h2> <div class='paragraph-container'> <p>Keep working. You got this!</p> </div>",
+        viewAttachments: "", view2: "",
+        starter1: "https://drive.google.com/file/d/1KFyA9a47jd9Ets6kPAPIaz1lRlV6Gxcw/view?usp=sharing",
+        starter2: "https://drive.google.com/file/d/1SGRUqL7LwDZHJPAeof6hHh7usXA7watT/view?usp=sharing"
+      },
+      august7: {
+        day: "Friday August 7",
+        title: "Recommender Systems Practice",
+        description: "<p>Create your own recommender system from scratch! You can use any dataset you'd like. Here are a few sugggestions: </p> <ul> <li><a href='https://www.kaggle.com/rounakbanik/the-movies-dataset' class='paragraph-links'>Movies</a></li> <li><a href='http://millionsongdataset.com/' class='paragraph-links'>Music</a></li> </ul>",
+        viewAttachments: "unview", view2: "unview",
+        starter1: "", starter2: ""
+      },
+      august8: {
+        day: "Saturday August 8",
+        title: "Recommender Systems Practice",
+        description: "<p>Keep working. You got this! <br> <br> <br> <br> <br> </p>",
+        viewAttachments: "unview", view2: "unview",
+        starter1: "", starter2: ""
       }
     };
     if(req.params.day in content){
