@@ -3001,6 +3001,11 @@ body {
   color:#f6b66c;
 }
 
+.event-description-header {
+  font-size:150%;
+  color:#EE827F
+}
+
 .starter-color:hover {
   color:#f6b66c;
   font-style: none;
@@ -3043,7 +3048,7 @@ body {
   text-decoraation: none;
 }
 
-.classroom-description-container {
+.classroom-description-container, .event-container {
   margin-bottom:20px;
   margin-top:20px;
 }
@@ -3077,7 +3082,16 @@ body {
 .email-style {
   font-family: 'Quicksand', sans-serif;
   color: #777777;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.upcoming-events {
+  color:#F6B66C;
+}
+
+.event-display {
+  font-size:200%;
+  color:#95BFB1;
 }
 
 .contact-image {
