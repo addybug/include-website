@@ -2558,6 +2558,8 @@ body {
 
      h3.faqq {
      	color: #EE827F;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
      	cursor: pointer;
      	-moz-transition: all 0.35s ease;
      	-ms-transition: all 0.35s ease;
