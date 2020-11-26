@@ -2,8 +2,8 @@
 
 module.exports = function(app) {
 
-  app.get('/about', function(req, res) {
-      res.render('pages/resources');
+  app.get('/', function(req, res) {
+      res.render('pages/home');
   });
 
   //Crash Course in Python
