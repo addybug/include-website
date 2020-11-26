@@ -533,7 +533,7 @@ module.exports = function(app) {
         res.send("404: Page Not Found", 400);
       }
    	} else {
-   		return response.send('Please login to view this page!');
+   		return res.send('Please login to view this page!');
    	}
 
   });
