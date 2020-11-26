@@ -524,12 +524,12 @@ module.exports = function(app) {
 
 
     };
-    if(req.params.day in content){
+    //if(req.params.day in content){
       res.render('pages/protected/web-development-weeks', {info: content[req.params.day]});
-    }
-    else {
-      res.send("404: Page Not Found", 400);
-    }
+    //}
+    //else {
+      //res.send("404: Page Not Found", 400);
+    //}
   });
 
 };
