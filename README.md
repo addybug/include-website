@@ -1,5 +1,5 @@
 # def include( ) Website
-This is the website for [def include( )](https://defineinclude.com)
+This is the website for [def include( )](https://defineinclude.com): A summer program for middle school and high school girls to gain new skills in various computer science topics.
 ## Our Mission
 Our mission is to support young women in furthering their interest and knowledge in computer science through engaging activities and empowerment. Since 1984, the number of women pursuing a degree in computer science has decreased from 37% to 18% and only 24% of the industry is women. Lots of initiatives and programs have started with the goal of raising those numbers, but haven’t had the results they desired.
 
