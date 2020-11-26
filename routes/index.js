@@ -3,7 +3,7 @@
 module.exports = function(app) {
 
   app.get('/about', function(req, res) {
-      res.render('pages/login');
+      res.render('pages/partners');
   });
 
   //Crash Course in Python
