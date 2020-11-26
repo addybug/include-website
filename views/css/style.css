@@ -515,6 +515,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
   color: #fff;
   background: #EE827F;
   border: 1px solid #fff;
@@ -3107,8 +3108,6 @@ body {
 
 .girlsComputer1 {
   background-image: url('../image/girls-computer-1.jpg');
-  display: flex;
-  align-items: center;
 }
 
 .girlsComputer2 {
