@@ -42,6 +42,19 @@ module.exports = function(app) {
       res.render('pages/resources');
   });
 
+  app.get('/crash-course', function(req, res) {
+      res.render('pages/crash-course');
+  });
+
+  app.get('/advanced-concepts', function(req, res) {
+      res.render('pages/advanced-concepts');
+  });
+
+  app.get('/machine-learning', function(req, res) {
+      res.render('pages/machine-learning');
+  });
+
+
   //Crash Course in Python
   app.get('/crash-course/live-lesson/:day', function(req, res) {
     let content = {
