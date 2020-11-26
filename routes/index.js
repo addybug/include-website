@@ -480,4 +480,56 @@ module.exports = function(app) {
     }
   });
 
+  //Web development
+  app.get('/web-dev/:week', function(req, res) {
+    let content = {
+      week1: {
+        week: "Week 1",
+        weekAssignments: "Assignments for September 5-September 11",
+        liveDay: "Day: September 5",
+        time: "Time: 9:30am-11am CT",
+        topics: "<li>This Course</li> <li>HTML Basics</li> <li>CSS Basics</li> <li>Tools Used in This Course</li>",
+        description: "<p> Create a web page that includes information about yourself including your name, school, and meaningful to you and an image. </p>",
+        examples: "",
+        view2: "", view3: "", view4: "", view5: "", view6: "unview",
+        example1: "https://week1-adisonlampert.glitch.me/",
+        example2: "https://def-include-about-cierra.glitch.me/",
+        example3: "https://lily-project1.glitch.me",
+        example4: "https://aboutchristelle.glitch.me/",
+        example5: "https://week-one-intro-julia.glitch.me/",
+        example6: "https://forms.gle/mujdy2oTZxNWYmScA",
+        slideShow: "https://docs.google.com/presentation/d/1_crrGP1Ru9bAmtq6tuWUZH7ouLPX0ms-7My71V6oTUg/edit?usp=sharing",
+        youtube: "https://youtu.be/20-wupkkiEc",
+        viewRec: ""
+      },
+      week1: {
+        week: "Week 1",
+        weekAssignments: "Assignments for September 5-September 11",
+        liveDay: "Day: September 5",
+        time: "Time: 9:30am-11am CT",
+        topics: "#",
+        description: "#",
+        examples: "",
+        view2: "", view3: "", view4: "", view5: "", view6: "",
+        example1: "",
+        example2: "",
+        example3: "",
+        example4: "",
+        example5: "",
+        example6: "",
+        slideShow: "#",
+        youtube: "#",
+        viewRec: ""
+      },
+
+
+    };
+    if(req.params.day in content){
+      res.render('pages/protected/web-development-weeks', {info: content[req.params.day]});
+    }
+    else {
+      res.send("404: Page Not Found", 400);
+    }
+  });
+
 };

@@ -3176,4 +3176,15 @@ body {
   color:white;
   font-weight: bold;
 }
+
+.submit-webdev {
+  text-decoration:none;
+  font-size:150%;
+  margin-top:-20px
+}
+
+.examples-style {
+  font-weight: bold;
+  margin-top: 10px;
+}
 /*# sourceMappingURL=style.css.map */
