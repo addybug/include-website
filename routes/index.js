@@ -54,7 +54,7 @@ module.exports = function(app) {
       res.render('pages/machine-learning');
   });
 
-  app.get('/web-dev', function(req, res) {
+  app.get('/web-development', function(req, res) {
     if (req.session.loggedin) {
       res.render('pages/protected/web-development')
     } else {
@@ -489,7 +489,7 @@ module.exports = function(app) {
   });
 
   //Web development
-  app.get('/web-dev/:week', function(req, res) {
+  app.get('/web-development/:week', function(req, res) {
     let content = {
       week1: {
         week: "Week 1",
