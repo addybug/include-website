@@ -101,6 +101,10 @@ button:focus {
   color: #222222;
 }
 
+.homepage-color {
+  color:#95BFB1;
+}
+
 .d_flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,7 +939,7 @@ h3 {
   background: #f9f9ff;
 }
 
-.sample-text-area .title_color {
+.sample-text-area, .title_color, .homepage-color {
   margin-bottom: 30px;
 }
 
@@ -977,7 +981,7 @@ h3 {
   background: #f9f9ff;
 }
 
-.elements_button .title_color {
+.elements_button, .title_color, .homepage-color {
   margin-bottom: 30px;
 }
 
@@ -3100,6 +3104,21 @@ body {
   max-width:90%;
   max-height:90%;
   margin-left:80;
+}
+
+.girlsComputer1 {
+  background-image: url('image/girls-computer-1.jpg');
+}
+
+.girlsComputer2 {
+  background-image: url('image/girls-computer-2.jpg');
+  width=100%;
+}
+
+.homePage-FAQ, .homePage-Contact {
+  color: white;
+  background-color:rgba(238,130,127,0.75);
+  width:160px;
 }
 
 /*# sourceMappingURL=style.css.map */
