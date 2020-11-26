@@ -7,7 +7,7 @@ module.exports = function(app) {
   });
 
   app.get('/mission', function(req, res) {
-      res.render('pages/mission');
+      res.render('pages/our-mission');
   });
 
   //Crash Course in Python
