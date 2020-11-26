@@ -3186,5 +3186,10 @@ body {
 .examples-style {
   font-weight: bold;
   margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.time-info {
+  margin-top: -10px;
 }
 /*# sourceMappingURL=style.css.map */

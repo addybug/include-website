@@ -27,7 +27,9 @@
                 </h2>
                 <div class="live-lesson-container">
                   <p class="live-lesson-info"><%= info.liveDay %></p>
-                  <p class="live-lesson-info"><%= info.time %></p>
+                  <div class="time-info">
+                    <p class="live-lesson-info time-info"><%= info.time %></p>
+                  </div>
                 </div>
                 <div class="live-lesson-container">
                   <p class="live-lesson-info">
@@ -58,42 +60,42 @@
                       Example 1
                     </a>
                   </li>
-                  <li>
+                  <li class="<%= info.view2 %>">
                     <a
                       href="<%= info.example2 %>"
-                      class="res_eve_des cc_resources <%= info.view2 %>"
+                      class="res_eve_des cc_resources"
                     >
                       Example 2
                     </a>
                   </li>
-                  <li>
+                  <li class="<%= info.view3 %>">
                     <a
                       href="<%= info.example3 %>"
-                      class="res_eve_des cc_resources <%= info.view3 %>"
+                      class="res_eve_des cc_resources"
                     >
                       Example 3
                     </a>
                   </li>
-                  <li>
+                  <li class="<%= info.view4 %>">
                     <a
                       href="<%= info.example4 %>"
-                      class="res_eve_des cc_resources <%= info.view4 %>"
+                      class="res_eve_des cc_resources"
                     >
                       Example 4
                     </a>
                   </li>
-                  <li>
+                  <li class="<%= info.view5 %>">
                     <a
                       href="<%= info.example5 %>"
-                      class="res_eve_des cc_resources <%= info.view5 %>"
+                      class="res_eve_des cc_resources"
                     >
                       Example 5
                     </a>
                   </li>
-                  <li>
+                  <li class="<%= info.view6 %>">
                     <a
                       href="<%= info.example6 %>"
-                      class="res_eve_des cc_resources <%= info.view6 %>"
+                      class="res_eve_des cc_resources"
                     >
                       Example 5
                     </a>
