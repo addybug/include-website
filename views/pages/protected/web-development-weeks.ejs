@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../../partials/head.ejs'); -%>
+
+    <body>
+
+        <%- include('../../partials/navwd'); -%>
+
+        <section class="breadcrumb_area br_image">
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle"><%= info.week %></h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="event_details_area section_gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 event_details">
+                <h2 class="res_eve_des assignment-header" >
+                  <%= info.weekAssignments %>
+                </h2>
+                <h2 class="live-lesson-header" >
+                  Live Lesson
+                </h2>
+                <div class="live-lesson-container">
+                  <p class="live-lesson-info"><%= info.liveDay %></p>
+                  <div class="time-info">
+                    <p class="live-lesson-info time-info"><%= info.time %></p>
+                  </div>
+                </div>
+                <div class="live-lesson-container">
+                  <p class="live-lesson-info">
+                    Today, we will go over:
+                  </p>
+                </div>
+                <ul>
+                  <%- info.topics %>
+                </ul>
+                <h2 class="res_eve_des project-header">
+                  Project
+                </h2>
+                <div class="examples-style">
+                  <p>Description</p>
+                </div>
+                <div class='paragraph-container'>
+                  <%- info.description %>
+                </div>
+                <div class="examples-style <%= info.examples %>">
+                  <p>Examples</p>
+                </div>
+                <ul class="<%= info.examples %>">
+                  <li>
+                    <a
+                      href="<%= info.example1 %>"
+                      class="res_eve_des cc_resources"
+                    >
+                      Example 1
+                    </a>
+                  </li>
+                  <li class="<%= info.view2 %>">
+                    <a
+                      href="<%= info.example2 %>"
+                      class="res_eve_des cc_resources"
+                    >
+                      Example 2
+                    </a>
+                  </li>
+                  <li class="<%= info.view3 %>">
+                    <a
+                      href="<%= info.example3 %>"
+                      class="res_eve_des cc_resources"
+                    >
+                      Example 3
+                    </a>
+                  </li>
+                  <li class="<%= info.view4 %>">
+                    <a
+                      href="<%= info.example4 %>"
+                      class="res_eve_des cc_resources"
+                    >
+                      Example 4
+                    </a>
+                  </li>
+                  <li class="<%= info.view5 %>">
+                    <a
+                      href="<%= info.example5 %>"
+                      class="res_eve_des cc_resources"
+                    >
+                      Example 5
+                    </a>
+                  </li>
+                  <li class="<%= info.view6 %>">
+                    <a
+                      href="<%= info.example6 %>"
+                      class="res_eve_des cc_resources"
+                    >
+                      Example 5
+                    </a>
+                  </li>
+                </ul>
+                <div class="submit-webdev">
+                  <a href="https://forms.gle/mujdy2oTZxNWYmScA">
+                    <p class="event_title">
+                      Submit work here.
+                    </p>
+                  </a>
+                </div>
+                <h2 class="res_eve_des assignment-header">
+                  Attachments
+                </h2>
+                <div class="starter-code">
+                  <a
+                    href="<%= info.slideShow %>"
+                    class="res_eve_des starter-color"
+                    >Slide Show <br />
+                  </a>
+                </div>
+                <div class="starter-code <%= info.viewRec %>">
+                  <a
+                    href="<%= info.youtube %>"
+                    class="res_eve_des starter-color"
+                    >Lesson Recording
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <%- include('../../partials/footerwd.ejs'); -%>
+
+        <%- include('../../partials/scripts.ejs'); -%>
+
+    </body>
+</html>

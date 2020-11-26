@@ -3,10 +3,11 @@ const bodyParser = require("body-parser");
 const app = express();
 const httpApp = express();
 const path = require('path')
-const http = require("http");
+const http = require('http');
 const https = require('https');
 const session = require('express-session');
-const port = 80;
+var routes = require('./routes/index.js');
+var partials = require('express-partials');
 const fs = require("fs");
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const { check, validationResult } = require('express-validator');
@@ -25,7 +26,12 @@ app.use(session({
 	saveUninitialized: true
 }));
 
-app.use(express.static("view", { extensions: ['html'] }));
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+routes(app);
+app.use(partials());
+
+app.use(express.static("views", { extensions: ['html'] }));
 
 pass2 = "2";
 function callback(responseText){
@@ -51,11 +57,9 @@ httpApp.get("*", function(req, res, next) {
     res.redirect("https://defineinclude.com" + req.path);
 });
 
-
 http.createServer(httpApp).listen(80, function() {
     console.log("Express TTP server listening on port 80");
 });
-
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
@@ -67,7 +71,7 @@ https
     {
       key: fs.readFileSync('key.pem'),
       cert: fs.readFileSync('cert.pem'),
-      ca: fs.readFileSync('chain.pem'),
+      ca: fs.readFileSync('chain.pem')
     },
     app
   )
@@ -99,7 +103,7 @@ var protectPath = function(regex) {
   };
 };
 
-app.use(protectPath(/^\/protected\/.*$/));
+app.use(protectPath(/pages\/protected\/.*$/));
 
  app.post('/auth', [
    check('username').trim().escape(),
@@ -122,26 +126,4 @@ app.use(protectPath(/^\/protected\/.*$/));
  		response.send('Please enter Username and Password!');
  		response.end();
  	}
- });
-
- app.get('/web-development', function(request, response) {
- 	if (request.session.loggedin) {
-		let html = fs.readFileSync(path.join(__dirname,'/protected/web-development.html'));
-    response.writeHead(200, {'Content-Type': 'text/html'});
-    response.end(html);
- 	} else {
- 		return response.send('Please login to view this page!');
- 	}
- 	response.end();
- });
-
- app.get('/web-development/:weekname', function(request, response) {
-   if (request.session.loggedin) {
-   let html = fs.readFileSync(path.join(__dirname,'/protected/' + request.params["weekname"]+'.html'));
-    response.writeHead(200, {'Content-Type': 'text/html'});
-    response.end(html);
-   } else {
-     return response.send('Please login to view this page!');
-   }
-   response.end();
  });

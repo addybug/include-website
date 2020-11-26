@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head.ejs'); -%>
+
+    <body>
+
+        <%- include('../partials/nav'); -%>
+
+        <section class="breadcrumb_area br_image">
+          <div class="container">
+            <div class="page-cover text-center">
+              <h2 class="page-cover-tittle">Home</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="about_area section_gap">
+          <div class="container">
+            <div class="section_title text-center">
+              <h2 class="grey-date">Welcome to</h2>
+              <img src="../image/Logo.png" alt="logo" class="index_logo" />
+            </div>
+            <div class="row">
+              <div class="col-md-6 d_flex">
+                <div class="about_content flex">
+                  <h2 class="homepage-color">Our Mission</h2>
+                  <p>
+                    Our mission is to support young women in furthering their
+                    interest and knowledge in computer science through engaging
+                    activities and empowerment. Since 1984, the number of women
+                    pursuing a degree in computer science has decreased from 37% to
+                    18% and only 24% of the industry is women. Lots of initiatives
+                    and programs have started with the goal of raising those
+                    numbers, but haven’t had the results they desired.
+                  </p>
+                  <a href="mission" class="about_btn btn_hover">
+                    Read Full Story
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="image/group-of-computers.png" alt="Group of Computers" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features_area">
+          <div class="row m0">
+            <div class="col-md-6 features_item d-flex justify-content-center text-center">
+                <h3 class="special_mobile_css home-options">Calendar</h3>
+                <a href="events" class="btn_hover view_btn special_mobile_css">
+                  View Details
+                </a>
+            </div>
+            <div class="col-md-6 features_item girlsComputer1 d-flex justify-content-center text-center">
+              <div>
+                <h3 class="special_mobile_css homePage-FAQ home-options">
+                  FAQ
+                </h3>
+              </div>
+              <a href="frequently-asked-questions" class="btn_hover view_btn special_mobile_css">
+                View Details
+              </a>
+            </div>
+            <div class="col-md-6 features_item girlsComputer2 d-flex justify-content-center text-center">
+              <h3 class="special_mobile_css homePage-FAQ home-options">
+                Contact Us
+              </h3>
+              <a href="contact-us" class="btn_hover view_btn special_mobile_css">
+                View Details
+              </a>
+            </div>
+            <div class="col-md-6 features_item d-flex justify-content-center text-center">
+              <h3 class="special_mobile_css home-options">Our Staff</h3>
+                <a href="staff" class="btn_hover view_btn special_mobile_css">
+                  View Details
+                </a>
+            </div>
+          </div>
+          <p>
+            <br><br><br><br>
+          </p>
+        </section>
+
+        <%- include('../partials/footer.ejs'); -%>
+
+        <%- include('../partials/scripts.ejs'); -%>
+
+    </body>
+</html>

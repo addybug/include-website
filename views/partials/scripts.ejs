@@ -1,0 +1,24 @@
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../js/jquery-3.2.1.min.js"></script>
+<script src="../../js/popper.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/jquery.ajaxchimp.min.js"></script>
+<script src="../../js/mail-script.js"></script>
+<script src="../../vendors/lightbox/simpleLightbox.min.js"></script>
+<script src="../../vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="../../js/stellar.js"></script>
+<script src="../../js/custom.js"></script>
+<script src="../../assets/js/uikit.min.js"></script>
+<script>
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxY_U44D0S3VHyvYlTKxDpwsdP2xliioHcufUcEZnxaei-ehnYL/exec";
+  const form = document.forms["submit-to-google-sheet"];
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then(document.getElementById("email-conf").removeAttribute("id"))
+      .catch(error => console.error("Error!", error.message));
+  });
+</script>

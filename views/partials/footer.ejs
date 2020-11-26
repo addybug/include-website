@@ -1,0 +1,49 @@
+<!-- views/partials/footer.ejs -->
+<footer class="footer-bs">
+  <div class="row">
+    <div class="col-md-4 footer-brand animated fadeInLeft">
+      <h2 class="footer-name">
+        def include( )
+      </h2>
+      <p>
+        A summer program for middle school and high school girls to gain new
+        skills in various computer science topics.
+      </p>
+    </div>
+    <div class="col-md-4 footer-nav animated fadeInUp">
+      <div class="col-md-4">
+        <ul class="pages">
+          <li><a href="mission">Our Mission</a></li>
+          <li><a href="events">Calendar</a></li>
+          <li><a href="resources">Resources</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list">
+          <li><a href="staff">About Us</a></li>
+          <li><a href="contact-us">Get Involved</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-4 footer-ns animated fadeInRight">
+      <h4 class="newsletter-footer">Newsletter</h4>
+      <p>Subscribe to emails about upcoming events</p>
+      <form name="submit-to-google-sheet" class="input-group">
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          placeholder="Email"
+        />
+        <span class="input-group-btn">
+          <button class="btn btn-default" id="submit-form" type="submit">
+            <div class="glyphicon glyphicon-envelope"></div>
+          </button>
+        </span>
+      </form>
+      <p id="email-conf"><br />Thanks for subscribing!</p>
+    </div>
+    <!-- /input-group -->
+  </div>
+</footer>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head.ejs'); -%>
+
+    <body>
+
+        <%- include('../partials/nav'); -%>
+
+        <section class="breadcrumb_area br_image">
+          <div class="container">
+            <div class="page-cover text-center">
+              <h2 class="page-cover-tittle"><%= info.day %></h2>
+            </div>
+          </div>
+        </section>
+        <section class="event_details_area section_gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 event_details">
+                <h2 class="res_eve_des assignment-header" >
+                  Assignments for Today
+                </h2>
+                <h2 class="live-lesson-header" >
+                  Live Lesson
+                </h2>
+                <div class="live-lesson-container">
+                  <p class="live-lesson-info"><%= info.time %></p>
+                </div>
+                <div class="live-lesson-container">
+                  <p class="live-lesson-info">
+                    Today, we will go over:
+                  </p>
+                </div>
+                <ul>
+                  <%- info.topics %>
+                </ul>
+                <h2
+                  class="res_eve_des project-header"
+                >
+                  <%= info.title %>
+                </h2>
+                <div class='paragraph-container'>
+                  <%- info.description %>
+                </div>
+                <h2 class="res_eve_des attachments">
+                    Attachments
+                </h2>
+                <ul>
+                  <li class=" <%= info.view %>">
+                      <a href="<%= info.starter %>" class="res_eve_des attachment-links">Starter Code
+                      </a>
+                  </li>
+                    <li>
+                        <a href="<%= info.slideShow %>" class="res_eve_des attachment-links">Slide Show
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<%= info.youtube %>" class="res_eve_des attachment-links">Lesson Recording
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <%- include('../partials/footer.ejs'); -%>
+
+        <%- include('../partials/scripts.ejs'); -%>
+
+    </body>
+</html>
