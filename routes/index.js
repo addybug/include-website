@@ -6,8 +6,40 @@ module.exports = function(app) {
       res.render('pages/home');
   });
 
+  app.get('/home', function(req, res) {
+      res.render('pages/home');
+  });
+
   app.get('/mission', function(req, res) {
       res.render('pages/our-mission');
+  });
+
+  app.get('/events', function(req, res) {
+      res.render('pages/events');
+  });
+
+  app.get('/frequently-asked-questions', function(req, res) {
+      res.render('pages/faq');
+  });
+
+  app.get('/staff', function(req, res) {
+      res.render('pages/about-us');
+  });
+
+  app.get('/contact-us', function(req, res) {
+      res.render('pages/contact');
+  });
+
+  app.get('/our-partners', function(req, res) {
+      res.render('pages/partners');
+  });
+
+  app.get('/login', function(req, res) {
+      res.render('pages/login');
+  });
+
+  app.get('/resources', function(req, res) {
+      res.render('pages/resources');
   });
 
   //Crash Course in Python
