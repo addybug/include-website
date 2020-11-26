@@ -3137,4 +3137,16 @@ body {
   text-align: center;
 }
 
+.container-resources {
+  padding-bottom: 60px;
+}
+
+.resource-type {
+  font-weight: 600;
+  font-size: 150%;
+}
+
+.resource-list {
+  padding-bottom: 0px;
+}
 /*# sourceMappingURL=style.css.map */
