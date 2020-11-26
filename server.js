@@ -103,7 +103,7 @@ var protectPath = function(regex) {
   };
 };
 
-app.use(protectPath(/^\/pages/protected/*));
+app.use(protectPath(/pages\/protected\/.*$/));
 
  app.post('/auth', [
    check('username').trim().escape(),
