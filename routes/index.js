@@ -517,7 +517,7 @@ module.exports = function(app) {
         example4: "",
         example5: "",
         example6: "",
-        slideShow: "#",
+        slideShow: "#", 
         youtube: "#",
         viewRec: ""
       },
