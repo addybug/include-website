@@ -502,7 +502,7 @@ module.exports = function(app) {
         youtube: "https://youtu.be/20-wupkkiEc",
         viewRec: ""
       },
-      week1: {
+      week2: {
         week: "Week 1",
         weekAssignments: "Assignments for September 5-September 11",
         liveDay: "Day: September 5",
