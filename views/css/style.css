@@ -2570,7 +2570,7 @@ body {
 
      }
 
-     h3.close {
+     h3.closed {
      	cursor: pointer;
 
      	&::after {
@@ -2602,19 +2602,19 @@ body {
      	}
      }
 
-     div.question {
+     div.respuesta {
      	background: lighten(#3D9970, 2%);
      	margin-bottom: 20px;
        	line-height: 1.8em;
      }
 
 
-     #faq-container {
+     #preguntas {
      	margin: 40px auto 0;
        	padding: 0 5%;
      }
 
-     #close {
+     #closeAll {
      	background-color:@color2;
      	bottom: 30px;
      	color: lighten(#3D9970, 100%);
