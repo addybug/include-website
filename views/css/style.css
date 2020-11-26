@@ -88,7 +88,8 @@ button:focus {
 .section_title h2 {
   font-size: 36px;
   line-height: 40px;
-  color: #222222;
+  color: #777777;
+      font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
@@ -3107,11 +3108,11 @@ body {
 }
 
 .girlsComputer1 {
-  background-image: url('image/girls-computer-1.jpg');
+  background-image: url('../image/girls-computer-1.jpg');
 }
 
 .girlsComputer2 {
-  background-image: url('image/girls-computer-2.jpg');
+  background-image: url('../image/girls-computer-2.jpg');
   width=100%;
 }
 
