@@ -55,10 +55,10 @@ module.exports = function(app) {
   });
 
   app.get('/web-dev', function(req, res) {
-    if (request.session.loggedin) {
+    if (req.session.loggedin) {
       res.render('pages/protected/web-development')
     } else {
-      return response.send('Please login to view this page!');
+      return res.send('Please login to view this page!');
     }
   });
 
