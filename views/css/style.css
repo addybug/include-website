@@ -3131,6 +3131,8 @@ body {
 
 .girlsComputer1 {
   background-image: url('../image/girls-computer-1.jpg');
+  display: flex;
+  align-content: center;
 }
 
 .girlsComputer2 {
