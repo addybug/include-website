@@ -54,6 +54,14 @@ module.exports = function(app) {
       res.render('pages/machine-learning');
   });
 
+  app.get('/web-dev', function(req, res) {
+    if (request.session.loggedin) {
+      res.render('pages/protected/web-development')
+    } else {
+      return response.send('Please login to view this page!');
+    }
+  });
+
 
   //Crash Course in Python
   app.get('/crash-course/live-lesson/:day', function(req, res) {
