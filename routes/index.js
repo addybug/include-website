@@ -517,19 +517,25 @@ module.exports = function(app) {
         example4: "",
         example5: "",
         example6: "",
-        slideShow: "#", 
+        slideShow: "#",
         youtube: "#",
         viewRec: ""
       },
 
 
     };
-    if(req.params.week in content){
-      res.render('pages/protected/web-development-weeks', {info: content[req.params.week]});
-    }
-    else {
-      res.send("404: Page Not Found", 400);
-    }
+
+    if (req.session.loggedin) {
+      if(req.params.week in content){
+        res.render('pages/protected/web-development-weeks', {info: content[req.params.week]});
+      }
+      else {
+        res.send("404: Page Not Found", 400);
+      }
+   	} else {
+   		return response.send('Please login to view this page!');
+   	}
+
   });
 
 };
