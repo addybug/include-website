@@ -130,7 +130,7 @@ app.use(protectPath(/pages\/protected\/.*$/));
 
  app.get('/web-development', function(request, response) {
  	if (request.session.loggedin) {
-		let html = fs.readFileSync(path.join(__dirname,'/protected/web-development.html'));
+		let html = fs.readFileSync(path.join(__dirname,'/pages/protected/web-development.html'));
     response.writeHead(200, {'Content-Type': 'text/html'});
     response.end(html);
  	} else {
