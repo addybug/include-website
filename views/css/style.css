@@ -2948,6 +2948,10 @@ body {
   font-weight:bold;
 }
 
+.res_eve_des {
+  font-weight: 600;
+}
+
 .paragraph-links:hover {
   color:#f6b66c;
 }
