@@ -2856,7 +2856,7 @@ body {
 .assignment-header {
   font-size:200%;
   color:#95bfb1;
-  font-weight:bold;
+  font-weight: 600;
 }
 
 .live-lesson-header {
@@ -2895,6 +2895,7 @@ body {
   font-size:150%;
   color:#EE827F;
   margin-top: 20px;
+  font-weight: 600;
   margin-bottom: -10px;
 }
 
