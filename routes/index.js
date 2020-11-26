@@ -650,7 +650,7 @@ module.exports = function(app) {
         liveDay: "Day: November 14",
         time: "Time: 9:30am-11am CT",
         topics: "<li>Publishing your website!</li>",
-        description: "Publish your personal website.",
+        description: "<p> Publish your personal website. </p>",
         examples: "unview",
         view2: "", view3: "", view4: "", view5: "", view6: "",
         example1: "", example2: "", example3: "", example4: "", example5: "", example6: "",

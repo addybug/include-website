@@ -624,6 +624,11 @@ h3 {
   transition: all 0.3s linear;
 }
 
+.event_title:hover{
+  text-decoration: none;
+  color: #f6b66c;
+}
+
 .res_link {
   color: #777777;
   font-size: 125%;
